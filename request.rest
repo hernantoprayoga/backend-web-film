@@ -1,0 +1,29 @@
+//create user
+POST http://localhost:5000/users
+Content-Type: application/json
+
+{
+    "name": "yoga",
+    "email": "admin@admin.com",
+    "password": "admin123",
+    "confPassword": "admin123",
+    "role": "admin"
+}
+
+###
+//login
+POST http://localhost:5000/login
+Content-Type: application/json
+
+{
+    "email": "admin@admin.com",
+    "password":"admin123"
+}
+
+###
+//get all product
+GET http://localhost:5000/products
+
+###
+//logout
+DELETE http://localhost:5000/logout
